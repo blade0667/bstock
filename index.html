@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BStock — Controle de A&amp;B para hotéis</title>
+<meta name="description" content="App Android para controlar o estoque de Alimentos & Bebidas do hotel: leitura de código de barras, importação de NF-e, alertas de reposição e validade, e sincronização da equipe.">
+<meta name="theme-color" content="#0e1726">
+<meta property="og:title" content="BStock — Controle de A&B para hotéis">
+<meta property="og:description" content="Entradas e saídas pelo código de barras, NF-e em um toque e estoque sincronizado entre a equipe.">
+<meta property="og:image" content="assets/logos/bstock-icone-1024.png">
+<link rel="icon" href="assets/logos/bstock-icone.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__motion)document.documentElement.classList.remove("js")},2500);</script>
+<script type="module" src="assets/site.js"></script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="BStock — início"><img src="assets/logos/bstock-logo-fundo-escuro.svg" alt="BStock"></a>
+    <ul>
+      <li><a href="#recursos">Recursos</a></li>
+      <li><a href="#nfe">NF-e</a></li>
+      <li><a href="#guia">Guia</a></li>
+      <li><a href="#faq">Dúvidas</a></li>
+      <li><a href="media-kit.html">Media Kit</a></li>
+    </ul>
+    <a class="btn btn-gold btn-sm" href="#baixar">Obter o app</a>
+  </div>
+</header>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Alimentos &amp; Bebidas · Hotelaria</span>
+        <h1>O estoque de A&amp;B do hotel, <span class="gold">na palma da mão.</span></h1>
+        <p class="lead">Dê entrada e saída lendo o código de barras com a câmera, importe a NF-e do fornecedor em um toque e veja o estoque atualizado em todos os celulares da equipe, mesmo sem internet.</p>
+        <div class="ctas">
+          <a class="btn btn-gold" href="#baixar">Como obter o app</a>
+          <a class="btn btn-ghost" href="#guia">Ver o guia de uso</a>
+        </div>
+        <p class="note">Android 8 ou superior · Funciona offline</p>
+      </div>
+      <div class="phones" aria-hidden="true">
+        <div class="phone back"><img src="assets/telas/conferir-nfe.webp" alt="" width="540" height="1128"></div>
+        <div class="phone front"><img src="assets/telas/painel.webp" alt="" width="540" height="1128"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div class="wrap reveal">
+      <div>Leitura pela câmera<span>EAN, UPC, QR e outros</span></div>
+      <div>NF-e em um toque<span>importação pelo XML</span></div>
+      <div>Funciona offline<span>sincroniza depois</span></div>
+      <div>Equipe conectada<span>tempo real, por hotel</span></div>
+    </div>
+  </div>
+
+  <!-- ============ RECURSOS ============ -->
+  <section class="section" id="recursos">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Recursos</span>
+        <h2>Tudo o que o almoxarifado de A&amp;B precisa</h2>
+        <p>Feito para a rotina de hotel: almoxarifado, bares, cozinha, room service, frigobar e eventos usando o mesmo estoque.</p>
+      </div>
+      <div class="grid grid-3 reveal">
+        <article class="card">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2M7 8v8M10 8v8M13 8v8M17 8v8"/></svg></div>
+          <h3>Entrada e saída pela câmera</h3>
+          <p>Aponte para o código de barras e lance a movimentação. Dá para ler vários produtos em sequência, com vibração e confirmação visual.</p>
+        </article>
+        <article class="card" style="--c: var(--blue)">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></div>
+          <h3>Importação de NF-e</h3>
+          <p>Abra o XML da nota e o app lista os itens, encontra os produtos já cadastrados e converte caixas em unidades.</p>
+        </article>
+        <article class="card" style="--c: var(--warn)">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></div>
+          <h3>Alertas de reposição e validade</h3>
+          <p>Defina o estoque mínimo de cada item e veja na hora o que precisa repor e quais lotes vencem nos próximos 7 dias.</p>
+        </article>
+        <article class="card" style="--c: var(--green)">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 1 0-1.4-8.8A6 6 0 1 0 6 17.3"/><path d="m9 15 3 3 3-3M12 12v6"/></svg></div>
+          <h3>Equipe sincronizada</h3>
+          <p>Cada hotel tem um código de convite. Quem entra vê o mesmo estoque em tempo real, e cada lançamento registra o responsável.</p>
+        </article>
+        <article class="card" style="--c: var(--purple)">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div>
+          <h3>Painel e consumo por setor</h3>
+          <p>Valor em estoque, itens a repor, movimentações do dia e quanto cada setor consumiu nos últimos 30 dias.</p>
+        </article>
+        <article class="card" style="--c: var(--coral)">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M8 12h8M8 16h8M12 12v8"/></svg></div>
+          <h3>Relatórios em planilha</h3>
+          <p>Exporte a posição de estoque e as movimentações em CSV, prontos para abrir no Excel e enviar por WhatsApp ou e-mail.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DESTAQUES ============ -->
+  <section class="section" id="nfe" style="background: var(--navy); border-block: 1px solid var(--line)">
+    <div class="wrap">
+      <div class="feature">
+        <div class="reveal">
+          <span class="eyebrow">Nota fiscal</span>
+          <h2>A nota do fornecedor vira entrada de estoque em segundos</h2>
+          <p class="muted" style="margin-top:14px">O fornecedor envia o XML da NF-e por e-mail. Toque no anexo, escolha <b>Importar NF-e no BStock</b> e confira a lista antes de lançar.</p>
+          <ul>
+            <li><span><b>Encontra os produtos sozinho</b> pelo código de barras, pelo nome ou pelo vínculo salvo daquele fornecedor.</span></li>
+            <li><span><b>Converte unidades:</b> 5 caixas com 12 viram 60 unidades, com o custo unitário recalculado.</span></li>
+            <li><span><b>Cadastra o que é novo</b> com nome, categoria, unidade e código de barras preenchidos.</span></li>
+            <li><span><b>Aproveita a validade do lote</b> quando a nota informa, para alimentar os alertas.</span></li>
+          </ul>
+        </div>
+        <div class="shot"><div class="phone"><img src="assets/telas/conferir-nfe.webp" alt="Tela de conferência da NF-e no BStock, com itens vinculados e novos" width="540" height="1128" loading="lazy"></div></div>
+      </div>
+
+      <div class="feature flip">
+        <div class="reveal">
+          <span class="eyebrow">DANFE</span>
+          <h2>Leia a DANFE e evite lançar a mesma nota duas vezes</h2>
+          <p class="muted" style="margin-top:14px">O código de barras da DANFE identifica a nota. Se ela já foi lançada por qualquer pessoa da equipe, o app avisa na hora, com data e responsável.</p>
+          <ul>
+            <li><span><b>Bloqueio de duplicidade</b> entre todos os celulares do hotel.</span></li>
+            <li><span><b>Confere o XML certo:</b> avisa se o arquivo escolhido não é o da DANFE lida.</span></li>
+            <li><span><b>Histórico de notas</b> com fornecedor, valor e quantidade de itens.</span></li>
+          </ul>
+        </div>
+        <div class="shot"><div class="phone"><img src="assets/telas/danfe.webp" alt="Aviso de NF-e já lançada após ler a DANFE" width="540" height="1128" loading="lazy"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMO FUNCIONA ============ -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Como funciona</span>
+        <h2>Comece a usar em três passos</h2>
+      </div>
+      <div class="grid grid-3 steps reveal">
+        <div class="card step"><h3>Instale o app</h3><p>Receba o APK do responsável e instale nos celulares da equipe. Não precisa de loja nem de cadastro para começar.</p></div>
+        <div class="card step"><h3>Crie o hotel e convide</h3><p>Em <kbd>Mais → Nuvem e equipe</kbd>, crie a conta e o hotel. Compartilhe o código de convite com a equipe.</p></div>
+        <div class="card step"><h3>Lance entradas e saídas</h3><p>Leia códigos de barras, importe NF-e e acompanhe o painel. Tudo fica sincronizado.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GUIA ============ -->
+  <section class="section" id="guia" style="padding-top: 0">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Guia de uso</span>
+        <h2>Passo a passo do BStock</h2>
+        <p>Toque em cada tópico para abrir as instruções.</p>
+      </div>
+      <div class="guide reveal">
+        <details open>
+          <summary><span class="n">1</span>Instalar o app</summary>
+          <div class="body">
+            <ol>
+              <li>Peça o arquivo <b>BStock.apk</b> ao responsável do estoque do hotel (ele pode enviar por WhatsApp, e-mail ou Drive).</li>
+              <li>Abra o arquivo baixado. Se o Android pedir, permita <b>instalar apps desconhecidos</b> para o navegador ou gerenciador de arquivos.</li>
+              <li>Toque em <b>Instalar</b> e depois em <b>Abrir</b>.</li>
+            </ol>
+            <p class="tip">Atualizações: instale o APK novo por cima do antigo. Os dados são mantidos.</p>
+          </div>
+        </details>
+        <details>
+          <summary><span class="n">2</span>Criar a conta e o hotel</summary>
+          <div class="body">
+            <ol>
+              <li>Toque no ícone de nuvem no topo do Início, ou vá em <kbd>Mais → Nuvem e equipe</kbd>.</li>
+              <li>Toque em <b>Criar conta</b> e informe nome, e-mail e senha (mínimo de 6 caracteres).</li>
+              <li>Em <b>Criar o estoque do hotel</b>, digite o nome do hotel e toque em <b>Criar hotel</b>.</li>
+              <li>O app mostra o <b>código de convite</b> (ex.: <kbd>K7QM-2XPA</kbd>). Os itens que já estavam no celular são enviados para a nuvem.</li>
+            </ol>
+          </div>
+        </details>
+        <details>
+          <summary><span class="n">3</span>Convidar a equipe</summary>
+          <div class="body">
+            <ol>
+              <li>Em <kbd>Mais → Nuvem e equipe</kbd>, toque em <b>Convidar</b> para enviar o código por WhatsApp, ou em <b>Copiar</b>.</li>
+              <li>Cada colaborador instala o app, cria a própria conta e digita o código em <b>Já tenho um código de convite</b>.</li>
+              <li>Pronto: todos veem o mesmo estoque, e cada lançamento fica registrado com o nome de quem fez.</li>
+            </ol>
+            <p class="tip">Cada hotel é separado: um hotel nunca vê os dados de outro.</p>
+          </div>
+        </details>
+        <details>
+          <summary><span class="n">4</span>Cadastrar itens</summary>
+          <div class="body">
+            <ol>
+              <li>Toque em <b>Novo item</b> no Início, ou leia o código de barras de um produto que ainda não está cadastrado.</li>
+              <li>Preencha nome, categoria, unidade (un, garrafa, lata, cx, kg, L…) e o local de armazenamento.</li>
+              <li>Informe o <b>estoque mínimo</b> para receber o alerta de reposição e o <b>custo unitário</b> para calcular o valor do estoque.</li>
+              <li>Se quiser, informe um estoque inicial: ele entra como a primeira movimentação do histórico.</li>
+            </ol>
+            <p class="tip">Ao ler um código novo, o app tenta preencher o nome do produto pela internet.</p>
+          </div>
+        </details>
+        <details>
+          <summary><span class="n">5</span>Entrada e saída pela câmera</summary>
+          <div class="body">
+            <ol>
+              <li>Toque no botão dourado central (<b>Ler</b>) ou em <b>Entrada</b> / <b>Saída</b> no Início.</li>
+              <li>Escolha o modo na parte de baixo: <b>Entrada</b>, <b>Saída</b> ou <b>Consultar</b>.</li>
+              <li>Aponte para o código de barras. Na tela que abre, ajuste a quantidade (há atalhos +6, +12 e +24 para caixas).</li>
+              <li>Na saída, escolha o <b>setor de destino</b> (Bar, Restaurante, Room Service, Frigobar, Eventos…). Na entrada, informe fornecedor, custo e validade, se quiser.</li>
+              <li>Confirme. O app vibra, mostra a confirmação e já fica pronto para o próximo produto.</li>
+            </ol>
+            <p class="tip">Sem câmera ou com código danificado? Toque no ícone de teclado para digitar o código.</p>
+          </div>
+        </details>
+        <details>
+          <summary><span class="n">6</span>Importar NF-e pelo XML</summary>
+          <div class="body">
+            <ol>
+              <li>Abra o e-mail do fornecedor, toque no anexo <b>.xml</b> e escolha <b>Importar NF-e no BStock</b>. Outra opção: toque em <b>NF-e</b> no Início e selecione o arquivo.</li>
+              <li>Confira a lista. Cada item aparece como <b>Vinculado</b> (já existe), <b>Novo item</b> ou <b>Ignorado</b>.</li>
+              <li>Toque num item para mudar o vínculo, ajustar a conversão (ex.: 1 CX = 12 un), a validade ou ignorar (frete, embalagens).</li>
+              <li>Toque em <b>Dar entrada</b>. Todos os itens entram de uma vez, com o fornecedor e o número da nota no histórico.</li>
+            </ol>
+            <p class="tip">Da segunda nota do mesmo fornecedor em diante, os itens já vêm vinculados automaticamente.</p>
+          </div>
+        </details>
+        <details>
+          <summary><span class="n">7</span>Ler a DANFE</summary>
+          <div class="body">
+            <ol>
+              <li>No leitor, aponte para o código de barras grande da DANFE (a chave de acesso de 44 dígitos).</li>
+              <li>Se a nota já foi lançada, o app avisa com data e responsável.</li>
+              <li>Se não foi, toque em <b>Selecionar XML</b> e escolha o arquivo da nota. O app confere se é o arquivo certo.</li>
+            </ol>
+          </div>
+        </details>
+        <details>
+          <summary><span class="n">8</span>Perdas e ajuste de inventário</summary>
+          <div class="body">
+            <ul>
+              <li><b>Perda / quebra:</b> abra o item e toque em <b>Perda</b>. Informe a quantidade, o setor e o motivo (garrafa quebrada, vencido…).</li>
+              <li><b>Ajuste de inventário:</b> na contagem física, toque em <b>Ajuste</b> e digite a quantidade contada. O app mostra a diferença e corrige o saldo.</li>
+            </ul>
+            <p class="tip">Movimentações não podem ser editadas nem apagadas uma a uma: o histórico fica completo para auditoria.</p>
+          </div>
+        </details>
+        <details>
+          <summary><span class="n">9</span>Painel, alertas e histórico</summary>
+          <div class="body">
+            <ul>
+              <li><b>Início:</b> valor em estoque, itens, itens a repor, lotes vencendo em 7 dias, consumo por setor e últimas movimentações.</li>
+              <li><b>Estoque:</b> busca por nome, categoria ou código, com filtros por categoria, favoritos e itens a repor.</li>
+              <li><b>Histórico:</b> movimentações por período (hoje, 7, 30, 90 dias ou 1 ano), com totais de entradas, saídas e perdas.</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary><span class="n">10</span>Relatórios em planilha</summary>
+          <div class="body">
+            <ol>
+              <li>Vá em <kbd>Mais → Relatórios</kbd> e escolha <b>Posição de estoque</b> ou <b>Movimentações do mês</b>. No Histórico, o ícone de download exporta o período escolhido.</li>
+              <li>Escolha onde enviar: WhatsApp, e-mail, Drive…</li>
+              <li>O arquivo CSV abre direto no Excel, já com acentos e colunas em português.</li>
+            </ol>
+          </div>
+        </details>
+        <details>
+          <summary><span class="n">11</span>Uso sem internet</summary>
+          <div class="body">
+            <p>O BStock grava tudo primeiro no celular. Sem sinal (câmara fria, almoxarifado no subsolo), continue lançando normalmente. Quando a conexão voltar, o app envia as alterações sozinho.</p>
+            <ul style="margin-top:10px">
+              <li><b>Nuvem verde:</b> sincronizado.</li>
+              <li><b>Nuvem dourada piscando:</b> enviando alterações.</li>
+              <li><b>Nuvem cortada:</b> sem internet, salvando no aparelho.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq" style="background: var(--navy); border-block: 1px solid var(--line)">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Dúvidas frequentes</span>
+        <h2>Perguntas comuns</h2>
+      </div>
+      <div class="faq reveal">
+        <div class="card"><h3>Preciso de internet para usar?</h3><p>Não. O app funciona offline e sincroniza quando a conexão voltar. A internet só é necessária para criar a conta e entrar no hotel.</p></div>
+        <div class="card"><h3>Mais de um hotel pode usar?</h3><p>Sim. Cada hotel tem o próprio estoque e o próprio código de convite, e os dados de um hotel nunca aparecem para outro.</p></div>
+        <div class="card"><h3>E se dois celulares lançarem ao mesmo tempo?</h3><p>O saldo é calculado pela soma das movimentações. Mesmo lançando offline ao mesmo tempo, o estoque fica certo quando todos sincronizam.</p></div>
+        <div class="card"><h3>Dá para usar sem criar conta?</h3><p>Sim. Sem conta, o BStock funciona só no aparelho. Se depois criar a conta, os dados podem ser enviados para a nuvem.</p></div>
+        <div class="card"><h3>Funciona com qualquer código de barras?</h3><p>Lê EAN-13, EAN-8, UPC, Code 128, Code 39, ITF, QR Code e Data Matrix, além da chave de acesso da DANFE.</p></div>
+        <div class="card"><h3>Está disponível para iPhone?</h3><p>Por enquanto, o BStock é apenas para Android 8 ou superior.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BAIXAR ============ -->
+  <section class="section" id="baixar">
+    <div class="wrap">
+      <div class="cta-box reveal">
+        <img src="assets/logos/bstock-icone.svg" alt="" width="84" height="84" style="margin: 0 auto 22px; border-radius: 22px">
+        <h2>Como obter o BStock</h2>
+        <p>A versão 1.0 para Android é distribuída diretamente pelo responsável do estoque do hotel. Peça a ele o arquivo <b>BStock.apk</b> e o código de convite da equipe.</p>
+        <div class="ctas">
+          <a class="btn btn-gold" href="#guia">Ver como instalar</a>
+          <a class="btn btn-ghost" href="media-kit.html">Media Kit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/logos/bstock-logo-fundo-escuro.svg" alt="BStock">
+    <span>Controle de A&amp;B para hotéis · © 2026</span>
+    <nav><a href="#guia">Guia</a><a href="#faq">Dúvidas</a><a href="media-kit.html">Media Kit</a></nav>
+  </div>
+</footer>
+</body>
+</html>
